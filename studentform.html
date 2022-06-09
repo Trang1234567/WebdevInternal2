@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>studentform</title>
+    <link rel="stylesheet" href="cssadminpage.css">
+    <script src="studentform.js"></script>
+</head>
+<body>
+    <!-- studentform -->
+    <header class="pageHeader">
+        <h1>Cool School</h1>
+        <p>logged in as admin</p>
+    </header>
+        <div class="containerForm">
+            <form name="informationForm" id="iForm" onsubmit="return submitInfoStudent()" method="post">
+                <h1>Add student</h1><br>
+                <label for="department">Department:</label>
+
+                <select name="department" id="department" required>
+                    <option value="Cs">Computer Science</option>
+                    <option value="Ec">Economy</option>
+                    <option value="Phy">Physics</option>
+                    <option value="Math">Math</option>
+                </select>
+                <!--<label for="semester">Semester</label>
+                <select name="semester" id="semester" required>
+                    <option value="Winter">Winter</option>
+                    <option value="Summer">Summer</option>
+                -->
+
+                </select>
+                </br>
+                <br>
+                <label for="studentId">Student ID</label>
+                <input type="text" name="studentId" id="studentId" required><br><br>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required><br><br>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname">
+                </br>
+
+                <br>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+                </br>
+                <!-- joining date -->
+                <br>
+                <fieldset id="joining">
+                    <label for="joiningdate">Joining Date (YYYY-MM-DD):</label>
+                    <input type="text" name="joiningdate" id="joiningdate" size="10" maxlength="10" value="" required>
+                </fieldset>
+                </br>
+
+                <fieldset id="birthdate">
+                    <label for="birthdate">Day Of Birth (YYYY-MM-DD):</label>
+                    <input type="text" name="birthday" id="birthday" size="10" maxlength="10" value="" required>
+                </fieldset>
+
+
+                <fieldset>
+                    <p>Gender</p>
+                    <input type="radio" id="gender1" name="gender" value="female">
+                    <labelradio for="gender1">female</labelradio>
+                    <input type="radio" id="gender2" name="gender" value=male">
+                    <labelradio for="gender2">male</labelradio>
+                    <input type="radio" id="gender3" name="gender" value="diverse">
+                    <labelradio for="gender3">diverse</labelradio><br><br>
+                </fieldset>
+                <button type="submit" value="Submit" >Add</button>
+        </form>
+    </div>
+    <button id="returntolist" onclick="returntolist()">Return to lists</button>
+</body>
+</html>

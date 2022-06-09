@@ -1,0 +1,113 @@
+body{
+    background:ghostwhite;
+    color: black;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#234998;
+    color: ghostwhite;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+}
+
+div{
+    margin: 50px auto 50px auto;
+    background-color: #D1D8E2;
+    padding :50px 10px 50px 10px;
+    border-radius: 25px;
+    color:black;
+    align-content: center;
+}
+
+.content-table{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 1.1vw;
+    width: 80%;
+}
+
+.content-table thead tr{
+    background-color: #5B95F3;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+}
+
+/*
+tr{
+    margin-right:50px;
+}
+*/
+
+.content-table th, .content-table td{
+    padding: 15px 0px 15px 0px;
+}
+
+/*.content-table tbody tr:nth-of-type(even){
+    background-color: #CCCBCB;
+}*/
+
+label{
+    margin-right: 5px;
+    margin-left: 50px;
+}
+
+labelradio{
+    margin-right: 20px;
+}
+
+select{
+    margin-right: 50px;
+}
+
+h1{
+    margin-right: 50px;
+}
+
+h{ margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p{
+    margin-left: 10px;
+}
+
+button{
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #5B95F3;
+    font-size: 15px;
+    color: floralwhite;
+    margin-right: 50px;
+}
+
+fieldset{
+    border-style:none;
+    margin: auto;
+    vertical-align: auto;
+}
+
+#filteredlist{
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 1.1vw;
+    width: 80%;
+}
+
+#filteredlist tbody tr:nth-of-type(even){
+    background-color: #CCCBCB;
+    padding-left: 200px;
+
+}
+
+
+

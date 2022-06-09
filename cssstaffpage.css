@@ -1,0 +1,121 @@
+body{
+    background:ghostwhite;
+    color: black;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#234998;
+    color: ghostwhite;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+}
+
+div{
+    margin: 50px 10px 50px 10px;
+    background-color: #D1D8E2;
+    padding :50px 10px 50px 10px;
+    color:black;
+    border-radius: 25px;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+}
+
+.content-table{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 1.1vw;
+    width: 80%;
+}
+
+.content-table thead tr{
+    background-color: #5B95F3;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+}
+
+.content-table th, .content-table td{
+    padding: 15px 0px 15px 0px;
+}
+
+/*.content-table tbody tr:nth-of-type(even){
+    background-color: #CCCBCB;
+}*/
+
+label{
+    margin-right: 10px;
+}
+
+select{
+    margin-right: 50px;
+}
+
+h1{
+    margin-right: 50px;
+}
+
+h{ margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p{
+    margin-left: auto;
+}
+
+button{
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #5B95F3;
+    font-size: 15px;
+    color: floralwhite;
+    margin-right: 50px;
+}
+
+.courses li {
+    text-align: left;
+    padding:20px 65px;
+}
+
+.courses li:nth-of-type(even){
+    background-color: #CCCBCB;
+}
+
+.courses li:nth-of-type(odd){
+    background-color: antiquewhite;
+}
+
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #5B95F3;
+}
+
+.bar{
+    text-align:start;
+    background-color: #EEF4FC;
+    padding:  20px 30px 20px;
+}
+
+#filteredlist{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 1.1vw;
+    width: 80%;
+}
+
+#filteredlist tbody tr:nth-of-type(even){
+    background-color: #CCCBCB;
+}

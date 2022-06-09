@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adminLogin</title>
+    <script src="jsadmin.js"></script>
+    <link rel="stylesheet" href="cssadmin.css">
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+    <nav>
+    <ul class="menu">
+        <li class="menu_item">
+            <a href="staffLogin.html">Staff login</a>
+        </li>
+    </ul></nav>
+</header>
+    <div class="loginContainer">
+        <form onsubmit="return validate()" >
+            <h2>Admin login</h2>
+            <label for="uname">Username:</label>
+            <input type="text" name="uname" id="uname" required>
+            <label for="pword">Password:</label>
+            <input type="text" name="pword" id="pword" required>
+            <button type="submit" id="submit">Login</button>
+            </form>
+    </div>
+    <p>Thi Huyen Trang, Nguyen s0573581</p>
+</body>
+</html>

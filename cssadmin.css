@@ -1,0 +1,74 @@
+body{
+    background:ghostwhite;
+    color: black;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#234998;
+    color: ghostwhite;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    box-sizing: border-box;
+    padding: 30px 40px;
+    display: inline-block;
+    font-size: 20px;
+    color:ghostwhite;
+    transition: all 1s ease 0s;
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: #D1D8E2;
+    opacity: 0.9;
+    border-radius: 25px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+}
+
+h2 {
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+fieldset{
+    border: none;
+    justify-content: center;
+    padding: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+button{
+    border-radius: 10px;
+    margin: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #5B95F3;
+    opacity: 0.8;
+    font-size: 15px;
+    color: floralwhite;
+}
+
+p{
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.5;
+}

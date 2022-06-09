@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>staffform</title>
+    <link rel="stylesheet" href="cssadminpage.css">
+    <script src="lists.js"></script>
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+    <p>logged in as admin</p>
+</header>
+    <div class="containerForm">
+        <form name="informationForm" id="iForm" action="staffform.html" onsubmit="addstaff()" method="post">
+            <h1>Add staff</h1>
+            <br>
+            <label for="staffId">Staff ID</label>
+            <input type="text" name="staffId" id="staffId" required><br><br>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" required><br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname"></br>
+            <br><label for="dob">DOB (YYYY-MM-DD):</label>
+            <input type="text" name="dob" id="dob"></br>
+            <br><label for="email">Email</label>
+            <input type="text" name="email" id="email" required></br>
+
+            <fieldset>
+                <p>Gender</p>
+                <input type="radio" id="gender1" name="gender" value="female">
+                <labelradio for="gender1">female</labelradio>
+                <input type="radio" id="gender2" name="gender" value=male">
+                <labelradio for="gender2">male</labelradio>
+                <input type="radio" id="gender3" name="gender" value="diverse">
+                <labelradio for="gender3">diverse</labelradio> <br> <br>
+            </fieldset>
+            <button type="submit" value="Submit">Add</button>
+        </form>
+
+    </div><button id="returntolist" onclick="returntolist()">Return to lists</button>
+</body>
+</html>

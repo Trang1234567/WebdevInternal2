@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>staffPage</title>
+    <link rel="stylesheet" href="cssstaffpage.css">
+    <script src="lists.js"></script>
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+<label for="department">Department</label>
+<select id="department" name="department" onchange="filterByDepartment(value)" required>
+    <option disabled selected value> -- select an option -- </option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Physics">Physics</option>
+    <option value="Maths">Math</option>
+    <option value="Economy">Economy</option>
+</select>
+
+<label for="semester">Semester</label>
+<select name="semester" id="semester" onchange="filterbySemester(value)" required>
+    <option value="Winter">Winter</option>
+    <option value="Summer">Summer</option>
+</select>
+    <p>logged in as staff</p>
+    </header>
+<nav class="bar">
+    <a href="overviewCourses.html">Overview Courses</a>
+</nav>
+<div class id="listcontainer">
+    <h>Students</h>
+    <table class = "content-table">
+        <thead>
+        <tr>
+            <th>Student_Id</th>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Joining Date</th>
+            <th>Department</th>
+            <th>Email_ID</th>
+        </tr>
+        </thead>
+        <table class id="filteredlist">
+            <tbody>
+            <!--<tr>
+                <td>12345</td>
+                <td>Trango</td>
+                <td>Nguyen</td>
+                <td>Computer Science</td>
+                <td>s0573581@htw-berlin.de</td>
+            </tr> -->
+            </tbody>
+        </table>
+        </table>
+    </div>
+</body>
+</html>

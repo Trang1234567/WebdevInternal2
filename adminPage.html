@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adminPage</title>
+    <link rel="stylesheet" href="cssadminpage.css">
+    <script src="lists.js"></script>
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+   <button id="update" onclick="update()">Update</button>
+    <button id="delete" onclick="delete()">Delete</button>
+    <button id="add" onclick="addStudent()">Add</button><br>
+
+    <label for="department">Department</label>
+    <select id="department" name="department" onchange="filterByDepartment(value)" required>
+        <option disabled selected value> -- select an option -- </option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Economy">Economy</option>
+        <option value="Physics">Physics</option>
+        <option value="Maths">Maths</option>
+    </select>
+
+    <label for="semester">Semester</label>
+    <select name="semester" id="semester" onchange="filterbySemester(value)" required>
+        <option value="Winter">Winter</option>
+        <option value="Summer">Summer</option>
+    </select>
+    <p>logged in as admin</p>
+</header>
+
+    <div class id="listcontainer">
+        <h>Students</h>
+       <table class = "content-table">
+        <thead>
+        <tr>
+            <th>Student_Id</th>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Joining Date</th>
+            <th>Department</th>
+            <th>Email_ID</th></tr>
+        </thead>
+            <table class id="filteredlist">
+                <tbody>
+            <!--
+            <tr>
+                <td>123</td>
+                <td>Trango</td>
+                <td>Nguyen</td>
+                <td>19-01-1995</td>
+                <td>female</td>
+                <td>2015-09-12</td>
+                <td>Computer Science</td>
+                <td>s0573581@htw-berlin.de</td>
+            </tr>
+            <tr>
+                <td>321</td>
+                <td>Trangonlino</td>
+                <td>Nguyen</td>
+                <td>29-01-2001</td>
+                <td>female</td>
+                <td>2015-01-19</td>
+                <td>Computer Science</td>
+                <td>s0573581@htw-berlin.de</td>
+            </tr>
+            <tr>
+                <td>134</td>
+                <td>Leanne</td>
+                <td>Graham</td>
+                <td>1980-01-19</td>
+                <td>female</td>
+                <td>2015-04-01</td>
+                <td>Maths</td>
+                <td>leanne@april.biz</td>
+            </tr>
+            <tr>
+                <td>256</td>
+                <td>Leo</td>
+                <td>Hubrich</td>
+                <td>1980-04-20</td>
+                <td>male</td>
+                <td>2015-10-01</td>
+                <td>Physics</td>
+                <td>leo@april.biz</td>
+            </tr>
+            <tr>
+                <td>311</td>
+                <td>Clementine</td>
+                <td>Krithiga</td>
+                <td>1998-03-12</td>
+                <td>female</td>
+                <td>2015-05-01</td>
+                <td>Economy</td>
+                <td>clementine@april.biz</td>
+            </tr>-->
+            </tbody>
+            </table>
+        </table>
+    </div>
+    <button id="stafflist" onclick="changelisttostaff()">Staff List</button>
+</body>
+</html>
+

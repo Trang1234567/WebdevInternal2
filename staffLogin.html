@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>staffLogin</title>
+    <script src="jsstaff.js"></script>
+    <link rel="stylesheet" href="cssstaff.css">
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+    <nav>
+        <ul class="menu">
+            <li class="menu_item">
+                <a href="adminLogin.html">Admin login</a>
+            </li>
+        </ul></nav>
+</header>
+    <div class="containerForm">
+        <form onsubmit="return validate()" method="post">
+            <h2>Staff login</h2>
+            <label for="uname">Username:</label>
+            <input type="text" name="uname" id="uname" required>
+            <label for="pword">Password:</label>
+            <input type="text" name="pword" id="pword" required>
+            <button type="submit" value="Submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

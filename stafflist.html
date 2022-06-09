@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stafflist</title>
+    <link rel="stylesheet" href="cssadminpage.css">
+    <script src="lists.js"></script>
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+    <button id="update" onclick="update()">Update</button>
+    <button id="delete" onclick="delete()">Delete</button>
+    <button id="add" onclick="addStaff()">Add</button>
+    <p>logged in as admin</p>
+</header>
+    <div class="listcontainer">
+        <h>Staffs</h>
+        <table class="content-table">
+            <thead>
+            <tr>
+            <th>Staff_Id</th>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Email_ID</th>
+            </thead>
+            </tr>
+            <tbody>
+            <tr>
+            <td>12345</td>
+        <td>Trango</td>
+        <td>Nguyen</td>
+        <td>19/01/1995</td>
+        <td>female</td>
+        <td>s0573581@htw-berlin.de</td>
+        </tr>
+        <tr>
+            <td>12345</td>
+            <td>Trango</td>
+            <td>Nguyen</td>
+            <td>19/01/1995</td>
+            <td>female</td>
+            <td>s0573581@htw-berlin.de</td>
+        </tr>
+            </tbody>
+        </table>
+    </div>
+    <button id="studentlist" onclick="changelisttostudent()">Student List</button>
+</body>
+</html>
